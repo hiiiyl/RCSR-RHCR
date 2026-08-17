@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rcsr-rhcr-core"
+version = "0.1.0"
+description = "Minimal reference implementation of reachability-constrained state reconstruction"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Yonghai Liu" }]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"
