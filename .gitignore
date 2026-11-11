@@ -41,3 +41,6 @@ experiments/reruns/
 experiments/tapes/*
 !experiments/tapes/n12_t1000/
 !experiments/tapes/n18_t1000/
+
+!experiments/results/
+!experiments/results/**

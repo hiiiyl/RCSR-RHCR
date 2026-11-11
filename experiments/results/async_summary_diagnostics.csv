@@ -1,0 +1,127 @@
+﻿suite,method,condition,delay,fleet,metric,unit,mean,sample_sd,n_valid,n_expected,case_count,case_expected
+async,RCSR-RHCR,moderate,0,6,mean_aoi,graph steps,6.1956999999999995,0.093146799815074,20,20,20,20
+async,RCSR-RHCR,moderate,0,6,mean_common_snapshot_aoi,graph steps,6.1956999999999995,0.093146799815074,20,20,20,20
+async,RCSR-RHCR,moderate,0,6,mean_latest_per_uav_mean_aoi,graph steps,2.1972833333333335,0.029972945890921688,20,20,20,20
+async,RCSR-RHCR,moderate,0,6,mean_synchronization_extra_mean_aoi,graph steps,3.9984166666666665,0.08802351327281188,20,20,20,20
+async,RCSR-RHCR,moderate,0,6,max_common_snapshot_aoi,graph steps; episode maximum,13.65,1.7851728502481652,20,20,20,20
+async,RCSR-RHCR,moderate,0,6,actual_mean_delay,graph steps,3.004805615366179,0.02524184797750914,20,20,20,20
+async,RCSR-RHCR,moderate,0,6,actual_p90_delay,graph steps; episode P90,6.0,0.0,20,20,20,20
+async,RCSR-RHCR,moderate,0,6,actual_loss_rate,fraction of sent packets,0.09925833333333334,0.004526877175168808,20,20,20,20
+async,RCSR-RHCR,moderate,0,6,actual_out_of_order_rate,fraction of delivered packets,0.40224095081691996,0.0054193104292046025,20,20,20,20
+async,RCSR-RHCR,moderate,0,6,actual_out_of_order_count,packets/episode,2170.0,33.3813688975405,20,20,20,20
+async,RCSR-RHCR,moderate,0,6,total_messages_sent,packets/episode,6000.0,0.0,20,20,20,20
+async,RCSR-RHCR,moderate,0,6,total_messages_dropped,packets/episode,595.55,27.16126305101285,20,20,20,20
+async,RCSR-RHCR,moderate,0,6,rejected_complete_snapshot_count,snapshots/episode,0.0,0.0,20,20,20,20
+async,RCSR-RHCR,moderate,0,6,common_snapshot_updates,updates/episode,426.0,10.872466432037832,20,20,20,20
+async,RCSR-RHCR,moderate,0,6,conditioning_fallback_count,fallbacks/episode,0.0,0.0,20,20,20,20
+async,RCSR-RHCR,moderate,0,6,planning_failure_count,cycles/episode,0.0,0.0,20,20,20,20
+async,RCSR-RHCR,moderate,0,6,planner_wait_fallback_count,cycles/episode,0.0,0.0,20,20,20,20
+async,RCSR-RHCR,moderate,0,6,initial_cohort_completion_fraction,fraction,0.9958333333333333,0.018633899812498255,20,20,20,20
+async,RCSR-RHCR,moderate,0,6,initial_cohort_restricted_wait_steps,steps,67.17083333333333,25.231218407162615,20,20,20,20
+async,RCSR-RHCR,moderate,0,6,mean_unfinished_target_age,steps,54.825,47.02263903558949,20,20,20,20
+async,RCSR-RHCR,moderate,0,6,p90_unfinished_target_age,steps,95.78500000000001,121.49988639804091,20,20,20,20
+async,RHCR-adapted,moderate,0,6,mean_aoi,graph steps,6.1956999999999995,0.093146799815074,20,20,20,20
+async,RHCR-adapted,moderate,0,6,mean_common_snapshot_aoi,graph steps,6.1956999999999995,0.093146799815074,20,20,20,20
+async,RHCR-adapted,moderate,0,6,mean_latest_per_uav_mean_aoi,graph steps,2.1972833333333335,0.029972945890921688,20,20,20,20
+async,RHCR-adapted,moderate,0,6,mean_synchronization_extra_mean_aoi,graph steps,3.9984166666666665,0.08802351327281188,20,20,20,20
+async,RHCR-adapted,moderate,0,6,max_common_snapshot_aoi,graph steps; episode maximum,13.65,1.7851728502481652,20,20,20,20
+async,RHCR-adapted,moderate,0,6,actual_mean_delay,graph steps,3.004805615366179,0.02524184797750914,20,20,20,20
+async,RHCR-adapted,moderate,0,6,actual_p90_delay,graph steps; episode P90,6.0,0.0,20,20,20,20
+async,RHCR-adapted,moderate,0,6,actual_loss_rate,fraction of sent packets,0.09925833333333334,0.004526877175168808,20,20,20,20
+async,RHCR-adapted,moderate,0,6,actual_out_of_order_rate,fraction of delivered packets,0.40224095081691996,0.0054193104292046025,20,20,20,20
+async,RHCR-adapted,moderate,0,6,actual_out_of_order_count,packets/episode,2170.0,33.3813688975405,20,20,20,20
+async,RHCR-adapted,moderate,0,6,total_messages_sent,packets/episode,6000.0,0.0,20,20,20,20
+async,RHCR-adapted,moderate,0,6,total_messages_dropped,packets/episode,595.55,27.16126305101285,20,20,20,20
+async,RHCR-adapted,moderate,0,6,rejected_complete_snapshot_count,snapshots/episode,0.0,0.0,20,20,20,20
+async,RHCR-adapted,moderate,0,6,common_snapshot_updates,updates/episode,426.0,10.872466432037832,20,20,20,20
+async,RHCR-adapted,moderate,0,6,conditioning_fallback_count,fallbacks/episode,,,0,20,20,20
+async,RHCR-adapted,moderate,0,6,planning_failure_count,cycles/episode,0.0,0.0,20,20,20,20
+async,RHCR-adapted,moderate,0,6,planner_wait_fallback_count,cycles/episode,0.0,0.0,20,20,20,20
+async,RHCR-adapted,moderate,0,6,initial_cohort_completion_fraction,fraction,0.9958333333333333,0.018633899812498255,20,20,20,20
+async,RHCR-adapted,moderate,0,6,initial_cohort_restricted_wait_steps,steps,223.27916666666667,49.5005336597732,20,20,20,20
+async,RHCR-adapted,moderate,0,6,mean_unfinished_target_age,steps,116.42916666666667,39.81193247137425,20,20,20,20
+async,RHCR-adapted,moderate,0,6,p90_unfinished_target_age,steps,225.92000000000002,90.68340299606852,20,20,20,20
+async,CC-RHCR,moderate,0,6,mean_aoi,graph steps,6.1956999999999995,0.093146799815074,20,20,20,20
+async,CC-RHCR,moderate,0,6,mean_common_snapshot_aoi,graph steps,6.1956999999999995,0.093146799815074,20,20,20,20
+async,CC-RHCR,moderate,0,6,mean_latest_per_uav_mean_aoi,graph steps,2.1972833333333335,0.029972945890921688,20,20,20,20
+async,CC-RHCR,moderate,0,6,mean_synchronization_extra_mean_aoi,graph steps,3.9984166666666665,0.08802351327281188,20,20,20,20
+async,CC-RHCR,moderate,0,6,max_common_snapshot_aoi,graph steps; episode maximum,13.65,1.7851728502481652,20,20,20,20
+async,CC-RHCR,moderate,0,6,actual_mean_delay,graph steps,3.004805615366179,0.02524184797750914,20,20,20,20
+async,CC-RHCR,moderate,0,6,actual_p90_delay,graph steps; episode P90,6.0,0.0,20,20,20,20
+async,CC-RHCR,moderate,0,6,actual_loss_rate,fraction of sent packets,0.09925833333333334,0.004526877175168808,20,20,20,20
+async,CC-RHCR,moderate,0,6,actual_out_of_order_rate,fraction of delivered packets,0.40224095081691996,0.0054193104292046025,20,20,20,20
+async,CC-RHCR,moderate,0,6,actual_out_of_order_count,packets/episode,2170.0,33.3813688975405,20,20,20,20
+async,CC-RHCR,moderate,0,6,total_messages_sent,packets/episode,6000.0,0.0,20,20,20,20
+async,CC-RHCR,moderate,0,6,total_messages_dropped,packets/episode,595.55,27.16126305101285,20,20,20,20
+async,CC-RHCR,moderate,0,6,rejected_complete_snapshot_count,snapshots/episode,0.0,0.0,20,20,20,20
+async,CC-RHCR,moderate,0,6,common_snapshot_updates,updates/episode,426.0,10.872466432037832,20,20,20,20
+async,CC-RHCR,moderate,0,6,conditioning_fallback_count,fallbacks/episode,,,0,20,20,20
+async,CC-RHCR,moderate,0,6,planning_failure_count,cycles/episode,0.0,0.0,20,20,20,20
+async,CC-RHCR,moderate,0,6,planner_wait_fallback_count,cycles/episode,0.0,0.0,20,20,20,20
+async,CC-RHCR,moderate,0,6,initial_cohort_completion_fraction,fraction,0.9958333333333333,0.018633899812498255,20,20,20,20
+async,CC-RHCR,moderate,0,6,initial_cohort_restricted_wait_steps,steps,151.89583333333334,40.96160371373623,20,20,20,20
+async,CC-RHCR,moderate,0,6,mean_unfinished_target_age,steps,91.16666666666667,37.07297805348777,20,20,20,20
+async,CC-RHCR,moderate,0,6,p90_unfinished_target_age,steps,175.28000000000003,63.41266352028468,20,20,20,20
+async,RCSR-RHCR,severe,0,6,mean_aoi,graph steps,11.443200000000001,0.3236309789348291,20,20,20,20
+async,RCSR-RHCR,severe,0,6,mean_common_snapshot_aoi,graph steps,11.443200000000001,0.3236309789348291,20,20,20,20
+async,RCSR-RHCR,severe,0,6,mean_latest_per_uav_mean_aoi,graph steps,3.3366166666666666,0.05757570912026837,20,20,20,20
+async,RCSR-RHCR,severe,0,6,mean_synchronization_extra_mean_aoi,graph steps,8.106583333333333,0.30461109084645416,20,20,20,20
+async,RCSR-RHCR,severe,0,6,max_common_snapshot_aoi,graph steps; episode maximum,26.95,3.2521248114845904,20,20,20,20
+async,RCSR-RHCR,severe,0,6,actual_mean_delay,graph steps,5.009093769725686,0.04552327730973614,20,20,20,20
+async,RCSR-RHCR,severe,0,6,actual_p90_delay,graph steps; episode P90,9.0,0.0,20,20,20,20
+async,RCSR-RHCR,severe,0,6,actual_loss_rate,fraction of sent packets,0.20035,0.005752675451805114,20,20,20,20
+async,RCSR-RHCR,severe,0,6,actual_out_of_order_rate,fraction of delivered packets,0.5138007026157018,0.0040581725045740905,20,20,20,20
+async,RCSR-RHCR,severe,0,6,actual_out_of_order_count,packets/episode,2456.35,25.588391693767786,20,20,20,20
+async,RCSR-RHCR,severe,0,6,total_messages_sent,packets/episode,6000.0,0.0,20,20,20,20
+async,RCSR-RHCR,severe,0,6,total_messages_dropped,packets/episode,1202.1,34.516052710830685,20,20,20,20
+async,RCSR-RHCR,severe,0,6,rejected_complete_snapshot_count,snapshots/episode,0.0,0.0,20,20,20,20
+async,RCSR-RHCR,severe,0,6,common_snapshot_updates,updates/episode,216.75,10.432111357171234,20,20,20,20
+async,RCSR-RHCR,severe,0,6,conditioning_fallback_count,fallbacks/episode,0.0,0.0,20,20,20,20
+async,RCSR-RHCR,severe,0,6,planning_failure_count,cycles/episode,0.0,0.0,20,20,20,20
+async,RCSR-RHCR,severe,0,6,planner_wait_fallback_count,cycles/episode,0.0,0.0,20,20,20,20
+async,RCSR-RHCR,severe,0,6,initial_cohort_completion_fraction,fraction,0.9958333333333333,0.018633899812498255,20,20,20,20
+async,RCSR-RHCR,severe,0,6,initial_cohort_restricted_wait_steps,steps,71.23333333333333,26.702861948811965,20,20,20,20
+async,RCSR-RHCR,severe,0,6,mean_unfinished_target_age,steps,55.87916666666666,48.148538710647905,20,20,20,20
+async,RCSR-RHCR,severe,0,6,p90_unfinished_target_age,steps,97.685,111.85607893510681,20,20,20,20
+async,RHCR-adapted,severe,0,6,mean_aoi,graph steps,11.443200000000001,0.3236309789348291,20,20,20,20
+async,RHCR-adapted,severe,0,6,mean_common_snapshot_aoi,graph steps,11.443200000000001,0.3236309789348291,20,20,20,20
+async,RHCR-adapted,severe,0,6,mean_latest_per_uav_mean_aoi,graph steps,3.3366166666666666,0.05757570912026837,20,20,20,20
+async,RHCR-adapted,severe,0,6,mean_synchronization_extra_mean_aoi,graph steps,8.106583333333333,0.30461109084645416,20,20,20,20
+async,RHCR-adapted,severe,0,6,max_common_snapshot_aoi,graph steps; episode maximum,26.95,3.2521248114845904,20,20,20,20
+async,RHCR-adapted,severe,0,6,actual_mean_delay,graph steps,5.009093769725686,0.04552327730973614,20,20,20,20
+async,RHCR-adapted,severe,0,6,actual_p90_delay,graph steps; episode P90,9.0,0.0,20,20,20,20
+async,RHCR-adapted,severe,0,6,actual_loss_rate,fraction of sent packets,0.20035,0.005752675451805114,20,20,20,20
+async,RHCR-adapted,severe,0,6,actual_out_of_order_rate,fraction of delivered packets,0.5138007026157018,0.0040581725045740905,20,20,20,20
+async,RHCR-adapted,severe,0,6,actual_out_of_order_count,packets/episode,2456.35,25.588391693767786,20,20,20,20
+async,RHCR-adapted,severe,0,6,total_messages_sent,packets/episode,6000.0,0.0,20,20,20,20
+async,RHCR-adapted,severe,0,6,total_messages_dropped,packets/episode,1202.1,34.516052710830685,20,20,20,20
+async,RHCR-adapted,severe,0,6,rejected_complete_snapshot_count,snapshots/episode,0.0,0.0,20,20,20,20
+async,RHCR-adapted,severe,0,6,common_snapshot_updates,updates/episode,216.75,10.432111357171234,20,20,20,20
+async,RHCR-adapted,severe,0,6,conditioning_fallback_count,fallbacks/episode,,,0,20,20,20
+async,RHCR-adapted,severe,0,6,planning_failure_count,cycles/episode,0.0,0.0,20,20,20,20
+async,RHCR-adapted,severe,0,6,planner_wait_fallback_count,cycles/episode,0.0,0.0,20,20,20,20
+async,RHCR-adapted,severe,0,6,initial_cohort_completion_fraction,fraction,0.9833333333333333,0.04359569698171641,20,20,20,20
+async,RHCR-adapted,severe,0,6,initial_cohort_restricted_wait_steps,steps,362.4,66.59874610273184,20,20,20,20
+async,RHCR-adapted,severe,0,6,mean_unfinished_target_age,steps,203.37083333333334,77.73014063043306,20,20,20,20
+async,RHCR-adapted,severe,0,6,p90_unfinished_target_age,steps,393.85,180.16996507683928,20,20,20,20
+async,CC-RHCR,severe,0,6,mean_aoi,graph steps,11.443200000000001,0.3236309789348291,20,20,20,20
+async,CC-RHCR,severe,0,6,mean_common_snapshot_aoi,graph steps,11.443200000000001,0.3236309789348291,20,20,20,20
+async,CC-RHCR,severe,0,6,mean_latest_per_uav_mean_aoi,graph steps,3.3366166666666666,0.05757570912026837,20,20,20,20
+async,CC-RHCR,severe,0,6,mean_synchronization_extra_mean_aoi,graph steps,8.106583333333333,0.30461109084645416,20,20,20,20
+async,CC-RHCR,severe,0,6,max_common_snapshot_aoi,graph steps; episode maximum,26.95,3.2521248114845904,20,20,20,20
+async,CC-RHCR,severe,0,6,actual_mean_delay,graph steps,5.009093769725686,0.04552327730973614,20,20,20,20
+async,CC-RHCR,severe,0,6,actual_p90_delay,graph steps; episode P90,9.0,0.0,20,20,20,20
+async,CC-RHCR,severe,0,6,actual_loss_rate,fraction of sent packets,0.20035,0.005752675451805114,20,20,20,20
+async,CC-RHCR,severe,0,6,actual_out_of_order_rate,fraction of delivered packets,0.5138007026157018,0.0040581725045740905,20,20,20,20
+async,CC-RHCR,severe,0,6,actual_out_of_order_count,packets/episode,2456.35,25.588391693767786,20,20,20,20
+async,CC-RHCR,severe,0,6,total_messages_sent,packets/episode,6000.0,0.0,20,20,20,20
+async,CC-RHCR,severe,0,6,total_messages_dropped,packets/episode,1202.1,34.516052710830685,20,20,20,20
+async,CC-RHCR,severe,0,6,rejected_complete_snapshot_count,snapshots/episode,0.0,0.0,20,20,20,20
+async,CC-RHCR,severe,0,6,common_snapshot_updates,updates/episode,216.75,10.432111357171234,20,20,20,20
+async,CC-RHCR,severe,0,6,conditioning_fallback_count,fallbacks/episode,,,0,20,20,20
+async,CC-RHCR,severe,0,6,planning_failure_count,cycles/episode,0.0,0.0,20,20,20,20
+async,CC-RHCR,severe,0,6,planner_wait_fallback_count,cycles/episode,0.0,0.0,20,20,20,20
+async,CC-RHCR,severe,0,6,initial_cohort_completion_fraction,fraction,0.9958333333333333,0.018633899812498255,20,20,20,20
+async,CC-RHCR,severe,0,6,initial_cohort_restricted_wait_steps,steps,143.13333333333333,39.712144061545104,20,20,20,20
+async,CC-RHCR,severe,0,6,mean_unfinished_target_age,steps,81.6,34.86744531350208,20,20,20,20
+async,CC-RHCR,severe,0,6,p90_unfinished_target_age,steps,150.43,54.94790930364964,20,20,20,20

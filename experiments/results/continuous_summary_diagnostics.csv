@@ -1,0 +1,235 @@
+﻿suite,method,condition,delay,fleet,metric,unit,mean,sample_sd,n_valid,n_expected,case_count,case_expected
+continuous,RCSR-RHCR,fixed,0,6,mean_aoi,graph steps,0.0,0.0,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,mean_common_snapshot_aoi,graph steps,0.0,0.0,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,mean_latest_per_uav_mean_aoi,graph steps,0.0,0.0,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,mean_synchronization_extra_mean_aoi,graph steps,0.0,0.0,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,max_common_snapshot_aoi,graph steps; episode maximum,0.0,0.0,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,actual_mean_delay,graph steps,0.0,0.0,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,actual_p90_delay,graph steps; episode P90,0.0,0.0,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,actual_loss_rate,fraction of sent packets,0.0,0.0,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,actual_out_of_order_rate,fraction of delivered packets,0.0,0.0,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,actual_out_of_order_count,packets/episode,0.0,0.0,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,total_messages_sent,packets/episode,6000.0,0.0,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,total_messages_dropped,packets/episode,0.0,0.0,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,rejected_complete_snapshot_count,snapshots/episode,0.0,0.0,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,common_snapshot_updates,updates/episode,1000.0,0.0,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,conditioning_fallback_count,fallbacks/episode,0.0,0.0,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,planning_failure_count,cycles/episode,0.0,0.0,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,planner_wait_fallback_count,cycles/episode,0.0,0.0,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,initial_cohort_completion_fraction,fraction,0.7958333333333334,0.11931517552730293,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,initial_cohort_restricted_wait_steps,steps,254.925,111.8541856392922,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,mean_unfinished_target_age,steps,840.5375,116.7276140145853,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,p90_unfinished_target_age,steps,983.88,32.324059802340166,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,mean_continuous_start_error_m,m; physical planning-start error,0.08224534859764959,0.013612858837794553,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,applied_waypoint_tracking_rmse_m,m; applied-waypoint tracking RMSE,0.23875938855717665,0.046951817895588825,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,minimum_pairwise_distance_m,m; sampled episode minimum,0.647218603657411,0.21686719643117333,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,uav_contact_events,contact onsets/episode,0.05,0.22360679774997896,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,obstacle_contact_events,contact onsets/episode,0.05,0.22360679774997896,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,boundary_violation_events,violation onsets/episode,0.0,0.0,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,uav_contact_pair_substep_fraction,fraction of pair-control-substeps,1.0000000000000002e-06,4.47213595499958e-06,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,obstacle_contact_uav_substep_fraction,fraction of UAV-control-substeps,1.6666666666666667e-06,7.453559924999299e-06,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,boundary_violation_uav_substep_fraction,fraction of UAV-control-substeps,0.0,0.0,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,uav_contact_pair_substeps,pair-control-substeps/episode,0.3,1.3416407864998738,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,obstacle_contact_uav_substeps,UAV-control-substeps/episode,0.2,0.8944271909999159,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,boundary_violation_uav_substeps,UAV-control-substeps/episode,0.0,0.0,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,uav_contact_pair_seconds,pair-seconds/episode,0.015000000000000003,0.0670820393249937,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,obstacle_contact_uav_seconds,UAV-seconds/episode,0.01,0.044721359549995794,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,boundary_violation_uav_seconds,UAV-seconds/episode,0.0,0.0,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,continuous_substeps,control substeps/episode,20000.0,0.0,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,rejected_reached_node_updates,updates/episode,0.0,0.0,20,20,20,20
+continuous,RCSR-RHCR,fixed,0,6,duplicate_confirmed_node_steps,graph steps/episode,0.0,0.0,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,mean_aoi,graph steps,0.0,0.0,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,mean_common_snapshot_aoi,graph steps,0.0,0.0,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,mean_latest_per_uav_mean_aoi,graph steps,0.0,0.0,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,mean_synchronization_extra_mean_aoi,graph steps,0.0,0.0,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,max_common_snapshot_aoi,graph steps; episode maximum,0.0,0.0,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,actual_mean_delay,graph steps,0.0,0.0,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,actual_p90_delay,graph steps; episode P90,0.0,0.0,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,actual_loss_rate,fraction of sent packets,0.0,0.0,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,actual_out_of_order_rate,fraction of delivered packets,0.0,0.0,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,actual_out_of_order_count,packets/episode,0.0,0.0,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,total_messages_sent,packets/episode,6000.0,0.0,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,total_messages_dropped,packets/episode,0.0,0.0,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,rejected_complete_snapshot_count,snapshots/episode,0.0,0.0,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,common_snapshot_updates,updates/episode,1000.0,0.0,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,conditioning_fallback_count,fallbacks/episode,,,0,20,20,20
+continuous,RHCR-adapted,fixed,0,6,planning_failure_count,cycles/episode,0.0,0.0,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,planner_wait_fallback_count,cycles/episode,0.0,0.0,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,initial_cohort_completion_fraction,fraction,0.7958333333333334,0.11931517552730293,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,initial_cohort_restricted_wait_steps,steps,254.925,111.8541856392922,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,mean_unfinished_target_age,steps,840.5375,116.7276140145853,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,p90_unfinished_target_age,steps,983.88,32.324059802340166,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,mean_continuous_start_error_m,m; physical planning-start error,0.08224534859764959,0.013612858837794553,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,applied_waypoint_tracking_rmse_m,m; applied-waypoint tracking RMSE,0.23875938855717665,0.046951817895588825,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,minimum_pairwise_distance_m,m; sampled episode minimum,0.647218603657411,0.21686719643117333,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,uav_contact_events,contact onsets/episode,0.05,0.22360679774997896,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,obstacle_contact_events,contact onsets/episode,0.05,0.22360679774997896,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,boundary_violation_events,violation onsets/episode,0.0,0.0,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,uav_contact_pair_substep_fraction,fraction of pair-control-substeps,1.0000000000000002e-06,4.47213595499958e-06,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,obstacle_contact_uav_substep_fraction,fraction of UAV-control-substeps,1.6666666666666667e-06,7.453559924999299e-06,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,boundary_violation_uav_substep_fraction,fraction of UAV-control-substeps,0.0,0.0,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,uav_contact_pair_substeps,pair-control-substeps/episode,0.3,1.3416407864998738,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,obstacle_contact_uav_substeps,UAV-control-substeps/episode,0.2,0.8944271909999159,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,boundary_violation_uav_substeps,UAV-control-substeps/episode,0.0,0.0,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,uav_contact_pair_seconds,pair-seconds/episode,0.015000000000000003,0.0670820393249937,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,obstacle_contact_uav_seconds,UAV-seconds/episode,0.01,0.044721359549995794,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,boundary_violation_uav_seconds,UAV-seconds/episode,0.0,0.0,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,continuous_substeps,control substeps/episode,20000.0,0.0,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,rejected_reached_node_updates,updates/episode,0.0,0.0,20,20,20,20
+continuous,RHCR-adapted,fixed,0,6,duplicate_confirmed_node_steps,graph steps/episode,0.0,0.0,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,mean_aoi,graph steps,0.0,0.0,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,mean_common_snapshot_aoi,graph steps,0.0,0.0,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,mean_latest_per_uav_mean_aoi,graph steps,0.0,0.0,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,mean_synchronization_extra_mean_aoi,graph steps,0.0,0.0,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,max_common_snapshot_aoi,graph steps; episode maximum,0.0,0.0,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,actual_mean_delay,graph steps,0.0,0.0,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,actual_p90_delay,graph steps; episode P90,0.0,0.0,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,actual_loss_rate,fraction of sent packets,0.0,0.0,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,actual_out_of_order_rate,fraction of delivered packets,0.0,0.0,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,actual_out_of_order_count,packets/episode,0.0,0.0,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,total_messages_sent,packets/episode,6000.0,0.0,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,total_messages_dropped,packets/episode,0.0,0.0,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,rejected_complete_snapshot_count,snapshots/episode,0.0,0.0,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,common_snapshot_updates,updates/episode,1000.0,0.0,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,conditioning_fallback_count,fallbacks/episode,,,0,20,20,20
+continuous,CC-RHCR,fixed,0,6,planning_failure_count,cycles/episode,0.0,0.0,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,planner_wait_fallback_count,cycles/episode,0.0,0.0,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,initial_cohort_completion_fraction,fraction,0.7958333333333334,0.11931517552730293,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,initial_cohort_restricted_wait_steps,steps,254.925,111.8541856392922,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,mean_unfinished_target_age,steps,840.5375,116.7276140145853,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,p90_unfinished_target_age,steps,983.88,32.324059802340166,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,mean_continuous_start_error_m,m; physical planning-start error,0.08224534859764959,0.013612858837794553,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,applied_waypoint_tracking_rmse_m,m; applied-waypoint tracking RMSE,0.23875938855717665,0.046951817895588825,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,minimum_pairwise_distance_m,m; sampled episode minimum,0.647218603657411,0.21686719643117333,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,uav_contact_events,contact onsets/episode,0.05,0.22360679774997896,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,obstacle_contact_events,contact onsets/episode,0.05,0.22360679774997896,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,boundary_violation_events,violation onsets/episode,0.0,0.0,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,uav_contact_pair_substep_fraction,fraction of pair-control-substeps,1.0000000000000002e-06,4.47213595499958e-06,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,obstacle_contact_uav_substep_fraction,fraction of UAV-control-substeps,1.6666666666666667e-06,7.453559924999299e-06,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,boundary_violation_uav_substep_fraction,fraction of UAV-control-substeps,0.0,0.0,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,uav_contact_pair_substeps,pair-control-substeps/episode,0.3,1.3416407864998738,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,obstacle_contact_uav_substeps,UAV-control-substeps/episode,0.2,0.8944271909999159,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,boundary_violation_uav_substeps,UAV-control-substeps/episode,0.0,0.0,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,uav_contact_pair_seconds,pair-seconds/episode,0.015000000000000003,0.0670820393249937,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,obstacle_contact_uav_seconds,UAV-seconds/episode,0.01,0.044721359549995794,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,boundary_violation_uav_seconds,UAV-seconds/episode,0.0,0.0,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,continuous_substeps,control substeps/episode,20000.0,0.0,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,rejected_reached_node_updates,updates/episode,0.0,0.0,20,20,20,20
+continuous,CC-RHCR,fixed,0,6,duplicate_confirmed_node_steps,graph steps/episode,0.0,0.0,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,mean_aoi,graph steps,6.1956999999999995,0.093146799815074,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,mean_common_snapshot_aoi,graph steps,6.1956999999999995,0.093146799815074,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,mean_latest_per_uav_mean_aoi,graph steps,2.1972833333333335,0.029972945890921688,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,mean_synchronization_extra_mean_aoi,graph steps,3.9984166666666665,0.08802351327281188,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,max_common_snapshot_aoi,graph steps; episode maximum,13.65,1.7851728502481652,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,actual_mean_delay,graph steps,3.004805615366179,0.02524184797750914,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,actual_p90_delay,graph steps; episode P90,6.0,0.0,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,actual_loss_rate,fraction of sent packets,0.09925833333333334,0.004526877175168808,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,actual_out_of_order_rate,fraction of delivered packets,0.40224095081691996,0.0054193104292046025,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,actual_out_of_order_count,packets/episode,2170.0,33.3813688975405,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,total_messages_sent,packets/episode,6000.0,0.0,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,total_messages_dropped,packets/episode,595.55,27.16126305101285,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,rejected_complete_snapshot_count,snapshots/episode,0.0,0.0,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,common_snapshot_updates,updates/episode,426.0,10.872466432037832,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,conditioning_fallback_count,fallbacks/episode,447.15,36.59777818968048,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,planning_failure_count,cycles/episode,0.0,0.0,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,planner_wait_fallback_count,cycles/episode,0.0,0.0,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,initial_cohort_completion_fraction,fraction,0.9333333333333333,0.09208437524218042,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,initial_cohort_restricted_wait_steps,steps,134.44166666666666,92.49984234220798,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,mean_unfinished_target_age,steps,354.81666666666666,166.71361312493227,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,p90_unfinished_target_age,steps,779.1500000000001,183.10334585462357,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,mean_continuous_start_error_m,m; physical planning-start error,0.5094948244759472,0.12456482908068645,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,applied_waypoint_tracking_rmse_m,m; applied-waypoint tracking RMSE,0.4383006039018252,0.07291317821890006,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,minimum_pairwise_distance_m,m; sampled episode minimum,0.4569271599675663,0.19730855077894305,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,uav_contact_events,contact onsets/episode,0.25,0.44426165831931924,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,obstacle_contact_events,contact onsets/episode,0.25,0.44426165831931924,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,boundary_violation_events,violation onsets/episode,0.1,0.30779350562554625,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,uav_contact_pair_substep_fraction,fraction of pair-control-substeps,4.166666666666667e-06,7.482924030536701e-06,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,obstacle_contact_uav_substep_fraction,fraction of UAV-control-substeps,1.6666666666666667e-05,3.1414043121877164e-05,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,boundary_violation_uav_substep_fraction,fraction of UAV-control-substeps,2.916666666666667e-06,9.078523593805044e-06,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,uav_contact_pair_substeps,pair-control-substeps/episode,1.25,2.24487720916101,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,obstacle_contact_uav_substeps,UAV-control-substeps/episode,2.0,3.7696851746252595,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,boundary_violation_uav_substeps,UAV-control-substeps/episode,0.35,1.0894228312566052,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,uav_contact_pair_seconds,pair-seconds/episode,0.0625,0.11224386045805052,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,obstacle_contact_uav_seconds,UAV-seconds/episode,0.1,0.18848425873126298,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,boundary_violation_uav_seconds,UAV-seconds/episode,0.0175,0.05447114156283027,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,continuous_substeps,control substeps/episode,20000.0,0.0,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,rejected_reached_node_updates,updates/episode,0.0,0.0,20,20,20,20
+continuous,RCSR-RHCR,moderate,0,6,duplicate_confirmed_node_steps,graph steps/episode,0.0,0.0,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,mean_aoi,graph steps,232.7543,209.17525332175663,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,mean_common_snapshot_aoi,graph steps,232.7543,209.17525332175663,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,mean_latest_per_uav_mean_aoi,graph steps,2.1972833333333335,0.029972945890921688,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,mean_synchronization_extra_mean_aoi,graph steps,230.55701666666667,209.1662174244557,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,max_common_snapshot_aoi,graph steps; episode maximum,530.75,431.62591929879085,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,actual_mean_delay,graph steps,3.004805615366179,0.02524184797750914,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,actual_p90_delay,graph steps; episode P90,6.0,0.0,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,actual_loss_rate,fraction of sent packets,0.09925833333333334,0.004526877175168808,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,actual_out_of_order_rate,fraction of delivered packets,0.40224095081691996,0.0054193104292046025,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,actual_out_of_order_count,packets/episode,2170.0,33.3813688975405,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,total_messages_sent,packets/episode,6000.0,0.0,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,total_messages_dropped,packets/episode,595.55,27.16126305101285,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,rejected_complete_snapshot_count,snapshots/episode,276.95,231.80946690626857,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,common_snapshot_updates,updates/episode,203.1,187.94789311486252,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,conditioning_fallback_count,fallbacks/episode,,,0,20,20,20
+continuous,RHCR-adapted,moderate,0,6,planning_failure_count,cycles/episode,0.0,0.0,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,planner_wait_fallback_count,cycles/episode,0.0,0.0,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,initial_cohort_completion_fraction,fraction,0.5541666666666667,0.422567860220377,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,initial_cohort_restricted_wait_steps,steps,561.925,317.7555481454147,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,mean_unfinished_target_age,steps,672.6833333333333,356.96273025271654,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,p90_unfinished_target_age,steps,826.415,265.21078067116827,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,mean_continuous_start_error_m,m; physical planning-start error,1.0435595640453494,0.2804863943050867,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,applied_waypoint_tracking_rmse_m,m; applied-waypoint tracking RMSE,0.38609123017704194,0.22626681608017196,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,minimum_pairwise_distance_m,m; sampled episode minimum,0.30680404486449625,0.20642255470078594,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,uav_contact_events,contact onsets/episode,1.5,1.2354415362426845,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,obstacle_contact_events,contact onsets/episode,1.15,1.4964871146156007,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,boundary_violation_events,violation onsets/episode,0.2,0.41039134083406165,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,uav_contact_pair_substep_fraction,fraction of pair-control-substeps,0.027807,0.030312393271530923,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,obstacle_contact_uav_substep_fraction,fraction of UAV-control-substeps,5.875e-05,8.33103038353972e-05,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,boundary_violation_uav_substep_fraction,fraction of UAV-control-substeps,1.75e-05,3.6764224283051355e-05,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,uav_contact_pair_substeps,pair-control-substeps/episode,8342.1,9093.717981459276,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,obstacle_contact_uav_substeps,UAV-control-substeps/episode,7.05,9.997236460247665,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,boundary_violation_uav_substeps,UAV-control-substeps/episode,2.1,4.411706913966163,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,uav_contact_pair_seconds,pair-seconds/episode,417.105,454.6858990729639,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,obstacle_contact_uav_seconds,UAV-seconds/episode,0.35250000000000004,0.49986182301238324,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,boundary_violation_uav_seconds,UAV-seconds/episode,0.10500000000000001,0.22058534569830815,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,continuous_substeps,control substeps/episode,20000.0,0.0,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,rejected_reached_node_updates,updates/episode,0.0,0.0,20,20,20,20
+continuous,RHCR-adapted,moderate,0,6,duplicate_confirmed_node_steps,graph steps/episode,525.8,437.45816040538455,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,mean_aoi,graph steps,157.1819,209.2063495357986,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,mean_common_snapshot_aoi,graph steps,157.1819,209.2063495357986,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,mean_latest_per_uav_mean_aoi,graph steps,2.1972833333333335,0.029972945890921688,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,mean_synchronization_extra_mean_aoi,graph steps,154.98461666666665,209.2108109039283,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,max_common_snapshot_aoi,graph steps; episode maximum,347.7,440.98801750041616,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,actual_mean_delay,graph steps,3.004805615366179,0.02524184797750914,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,actual_p90_delay,graph steps; episode P90,6.0,0.0,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,actual_loss_rate,fraction of sent packets,0.09925833333333334,0.004526877175168808,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,actual_out_of_order_rate,fraction of delivered packets,0.40224095081691996,0.0054193104292046025,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,actual_out_of_order_count,packets/episode,2170.0,33.3813688975405,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,total_messages_sent,packets/episode,6000.0,0.0,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,total_messages_dropped,packets/episode,595.55,27.16126305101285,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,rejected_complete_snapshot_count,snapshots/episode,178.5,236.42858051473075,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,common_snapshot_updates,updates/episode,281.85,191.34490077509665,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,conditioning_fallback_count,fallbacks/episode,,,0,20,20,20
+continuous,CC-RHCR,moderate,0,6,planning_failure_count,cycles/episode,0.0,0.0,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,planner_wait_fallback_count,cycles/episode,0.0,0.0,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,initial_cohort_completion_fraction,fraction,0.7166666666666667,0.37793684301737707,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,initial_cohort_restricted_wait_steps,steps,389.68333333333334,310.86639516563196,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,mean_unfinished_target_age,steps,515.3875,366.7112226467285,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,p90_unfinished_target_age,steps,682.4350000000001,289.6120531713162,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,mean_continuous_start_error_m,m; physical planning-start error,6.635919286051503,7.719679755968539,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,applied_waypoint_tracking_rmse_m,m; applied-waypoint tracking RMSE,0.4384629704624489,0.21725533889659437,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,minimum_pairwise_distance_m,m; sampled episode minimum,0.3305410189984874,0.23687275670064606,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,uav_contact_events,contact onsets/episode,0.9,1.0208355710680808,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,obstacle_contact_events,contact onsets/episode,1.3,1.4545753585442764,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,boundary_violation_events,violation onsets/episode,0.5,0.8271701918685112,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,uav_contact_pair_substep_fraction,fraction of pair-control-substeps,0.007256833333333333,0.019294095617617177,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,obstacle_contact_uav_substep_fraction,fraction of UAV-control-substeps,7.208333333333333e-05,9.113782859586677e-05,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,boundary_violation_uav_substep_fraction,fraction of UAV-control-substeps,3.0416666666666666e-05,5.320674395543464e-05,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,uav_contact_pair_substeps,pair-control-substeps/episode,2177.05,5788.228685285153,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,obstacle_contact_uav_substeps,UAV-control-substeps/episode,8.65,10.936539431504013,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,boundary_violation_uav_substeps,UAV-control-substeps/episode,3.65,6.384809274652158,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,uav_contact_pair_seconds,pair-seconds/episode,108.8525,289.41143426425765,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,obstacle_contact_uav_seconds,UAV-seconds/episode,0.43250000000000005,0.5468269715752007,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,boundary_violation_uav_seconds,UAV-seconds/episode,0.1825,0.3192404637326079,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,continuous_substeps,control substeps/episode,20000.0,0.0,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,rejected_reached_node_updates,updates/episode,0.0,0.0,20,20,20,20
+continuous,CC-RHCR,moderate,0,6,duplicate_confirmed_node_steps,graph steps/episode,338.95,447.4090880897069,20,20,20,20
