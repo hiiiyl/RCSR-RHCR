@@ -1,6 +1,6 @@
-# RCSR-RHCR Core
+# RCSR-RHCR
 
-Minimal reference implementation of **Reachability-Constrained State
+Reference implementation and experiment results for **Reachability-Constrained State
 Reconstruction for Rolling-Horizon Multi-UAV Planning under Delayed
 Feedback**.
 
@@ -10,7 +10,19 @@ historical position and replays only controller-issued commands that are
 causally available. Probability can advance to a reference waypoint only
 through an edge of the planner's legal motion graph.
 
-## Contents
+## Revised experiments
+
+The current experimental method, eight-method comparisons, three mechanism controls, window and fleet studies, asynchronous and continuous extensions, and independent serial timing results are included in [`experiments/`](experiments/README.md). Every experiment group contains seeds 9400–9419. The release preserves Tables 7 and 8 as numerical CSV tables.
+
+```sh
+python -m pip install -r experiments/requirements.txt
+python experiments/run.py --suite all --list
+python experiments/summarize.py
+```
+
+See the experiment README for units, paired uncertainty, sample reuse and missing P90 values.
+
+## Original core example
 
 This repository contains:
 
@@ -19,9 +31,7 @@ This repository contains:
 - tests of the method's principal invariants; and
 - a concise method description.
 
-The synthetic example requires no external dataset. The full multi-UAV
-simulation and experimental data are outside the scope of this core reference
-implementation.
+The synthetic example requires no external dataset. The revised simulator and twenty-seed experimental results are in [`experiments/`](experiments/README.md). The original minimal API below remains available for the early graph-reconstruction example; it does not implement the revised joint reconstruction pipeline.
 
 ## Requirements
 
