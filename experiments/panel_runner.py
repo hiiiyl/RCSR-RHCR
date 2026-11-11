@@ -78,6 +78,8 @@ def run_one(job):
             result = json.load(stream)
         if result["status"] != "completed" or result["experiment_job"] != job:
             raise ValueError(f"Unexpected existing result: {path}")
+        if job["suite"] == "continuous" and result["summary"].get("continuous_interface_version") != "service_margin_v2":
+            raise ValueError(f"Archive this earlier continuous-interface result before rerunning: {path}")
         return {**job, "status": "reused", "metrics": result["metrics"]}
     sys.path.insert(0, str(PACKAGE / "src"))
     sys.path.insert(0, str(PACKAGE / "analysis"))

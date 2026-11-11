@@ -1,25 +1,25 @@
 ﻿suite,method,delay,fleet,commit_window,condition,metric,unit,mean,sample_sd,ci95_low,ci95_high,n_valid,n_expected,case_count,case_expected,status,source
-continuous,RCSR-RHCR,0,6,2,fixed,p90_response_time,steps,116.35000000000001,34.7923993514615,102.299875,131.690125,20,20,20,20,complete,new_continuous
-continuous,RCSR-RHCR,0,6,2,fixed,mean_planning_start_error,grid units (post-repair),0.0,0.0,0.0,0.0,20,20,20,20,complete,new_continuous
-continuous,RCSR-RHCR,0,6,2,fixed,steady_state_throughput,tasks/step,0.01927777777777778,0.014990900423809411,0.013166666666666667,0.02588888888888889,20,20,20,20,complete,new_continuous
-continuous,RCSR-RHCR,0,6,2,fixed,safety_interventions_per_uav_step,interventions/1000 UAV-steps,1.0916666666666668,1.0901941991282404,0.6666666666666666,1.5999999999999999,20,20,20,20,complete,new_continuous
-continuous,RHCR-adapted,0,6,2,fixed,p90_response_time,steps,116.35000000000001,34.7923993514615,102.299875,131.690125,20,20,20,20,complete,new_continuous
-continuous,RHCR-adapted,0,6,2,fixed,mean_planning_start_error,grid units (post-repair),0.0,0.0,0.0,0.0,20,20,20,20,complete,new_continuous
-continuous,RHCR-adapted,0,6,2,fixed,steady_state_throughput,tasks/step,0.01927777777777778,0.014990900423809411,0.013166666666666667,0.02588888888888889,20,20,20,20,complete,new_continuous
-continuous,RHCR-adapted,0,6,2,fixed,safety_interventions_per_uav_step,interventions/1000 UAV-steps,1.0916666666666668,1.0901941991282404,0.6666666666666666,1.5999999999999999,20,20,20,20,complete,new_continuous
-continuous,CC-RHCR,0,6,2,fixed,p90_response_time,steps,116.35000000000001,34.7923993514615,102.299875,131.690125,20,20,20,20,complete,new_continuous
-continuous,CC-RHCR,0,6,2,fixed,mean_planning_start_error,grid units (post-repair),0.0,0.0,0.0,0.0,20,20,20,20,complete,new_continuous
-continuous,CC-RHCR,0,6,2,fixed,steady_state_throughput,tasks/step,0.01927777777777778,0.014990900423809411,0.013166666666666667,0.02588888888888889,20,20,20,20,complete,new_continuous
-continuous,CC-RHCR,0,6,2,fixed,safety_interventions_per_uav_step,interventions/1000 UAV-steps,1.0916666666666668,1.0901941991282404,0.6666666666666666,1.5999999999999999,20,20,20,20,complete,new_continuous
-continuous,RCSR-RHCR,0,6,2,moderate,p90_response_time,steps,133.87,24.375637103684628,124.0395,144.95025,20,20,20,20,complete,new_continuous
-continuous,RCSR-RHCR,0,6,2,moderate,mean_planning_start_error,grid units (post-repair),0.4685821174387537,0.1335260617323403,0.40927697275124747,0.5213462415695385,20,20,20,20,complete,new_continuous
-continuous,RCSR-RHCR,0,6,2,moderate,steady_state_throughput,tasks/step,0.12283333333333334,0.0470486662728146,0.10294305555555557,0.14216666666666666,20,20,20,20,complete,new_continuous
-continuous,RCSR-RHCR,0,6,2,moderate,safety_interventions_per_uav_step,interventions/1000 UAV-steps,2.525,2.025621700825157,1.7750000000000001,3.475,20,20,20,20,complete,new_continuous
-continuous,RHCR-adapted,0,6,2,moderate,p90_response_time,steps,240.37058823529415,163.358171530788,163.5877941176471,313.91205882352943,17,20,20,20,complete,new_continuous
-continuous,RHCR-adapted,0,6,2,moderate,mean_planning_start_error,grid units (post-repair),1.0450111407811766,0.29535177907076554,0.9186197121954907,1.1677675251665376,20,20,20,20,complete,new_continuous
-continuous,RHCR-adapted,0,6,2,moderate,steady_state_throughput,tasks/step,0.023277777777777776,0.026555506618663464,0.012611111111111111,0.034833333333333334,20,20,20,20,complete,new_continuous
-continuous,RHCR-adapted,0,6,2,moderate,safety_interventions_per_uav_step,interventions/1000 UAV-steps,281.46666666666664,249.40744160875505,176.965625,385.65125,20,20,20,20,complete,new_continuous
-continuous,CC-RHCR,0,6,2,moderate,p90_response_time,steps,192.95000000000002,115.96596369988094,141.299625,240.32037499999996,20,20,20,20,complete,new_continuous
-continuous,CC-RHCR,0,6,2,moderate,mean_planning_start_error,grid units (post-repair),6.608980603588357,7.724851488999396,3.5246844483472906,10.106556612588477,20,20,20,20,complete,new_continuous
-continuous,CC-RHCR,0,6,2,moderate,steady_state_throughput,tasks/step,0.04611111111111111,0.036100538263272273,0.030111111111111113,0.06127777777777778,20,20,20,20,complete,new_continuous
-continuous,CC-RHCR,0,6,2,moderate,safety_interventions_per_uav_step,interventions/1000 UAV-steps,8.458333333333334,7.204789464520818,5.483333333333333,11.691666666666666,20,20,20,20,complete,new_continuous
+continuous,RCSR-RHCR,0,6,2,fixed,p90_response_time,steps,81.85000000000001,9.121778450788156,78.20975000000001,86.000125,20,20,20,20,complete,new_continuous
+continuous,RCSR-RHCR,0,6,2,fixed,mean_planning_start_error,grid units (post-repair),0.44941391296325567,2.0098401188400272,0.0,1.348241738889767,20,20,20,20,complete,new_continuous
+continuous,RCSR-RHCR,0,6,2,fixed,steady_state_throughput,tasks/step,0.26761111111111113,0.04056500731004097,0.24888888888888888,0.2827222222222222,20,20,20,20,complete,new_continuous
+continuous,RCSR-RHCR,0,6,2,fixed,safety_interventions_per_uav_step,interventions/1000 UAV-steps,16.566666666666666,58.746417086217576,2.799791666666667,43.21666666666667,20,20,20,20,complete,new_continuous
+continuous,RHCR-adapted,0,6,2,fixed,p90_response_time,steps,81.85000000000001,9.121778450788156,78.20975000000001,86.000125,20,20,20,20,complete,new_continuous
+continuous,RHCR-adapted,0,6,2,fixed,mean_planning_start_error,grid units (post-repair),0.03215878784786799,0.143818471403654,0.0,0.09647636354360398,20,20,20,20,complete,new_continuous
+continuous,RHCR-adapted,0,6,2,fixed,steady_state_throughput,tasks/step,0.26761111111111113,0.04056500731004097,0.24888888888888888,0.2827222222222222,20,20,20,20,complete,new_continuous
+continuous,RHCR-adapted,0,6,2,fixed,safety_interventions_per_uav_step,interventions/1000 UAV-steps,14.408333333333333,49.10111523727195,2.799791666666667,36.74166666666667,20,20,20,20,complete,new_continuous
+continuous,CC-RHCR,0,6,2,fixed,p90_response_time,steps,81.85000000000001,9.121778450788156,78.20975000000001,86.000125,20,20,20,20,complete,new_continuous
+continuous,CC-RHCR,0,6,2,fixed,mean_planning_start_error,grid units (post-repair),0.4539427316244683,2.030093611608509,0.0,1.3618281948734048,20,20,20,20,complete,new_continuous
+continuous,CC-RHCR,0,6,2,fixed,steady_state_throughput,tasks/step,0.26761111111111113,0.04056500731004097,0.24888888888888888,0.2827222222222222,20,20,20,20,complete,new_continuous
+continuous,CC-RHCR,0,6,2,fixed,safety_interventions_per_uav_step,interventions/1000 UAV-steps,4.1000000000000005,3.600844605275966,2.799791666666667,5.808333333333333,20,20,20,20,complete,new_continuous
+continuous,RCSR-RHCR,0,6,2,moderate,p90_response_time,steps,86.56,7.416084936775852,83.43,89.65512500000001,20,20,20,20,complete,new_continuous
+continuous,RCSR-RHCR,0,6,2,moderate,mean_planning_start_error,grid units (post-repair),1.1702468269372917,1.0715304100474914,0.8809231962845472,1.692274468537263,20,20,20,20,complete,new_continuous
+continuous,RCSR-RHCR,0,6,2,moderate,steady_state_throughput,tasks/step,0.25477777777777777,0.058384244004852835,0.22627638888888887,0.2751680555555555,20,20,20,20,complete,new_continuous
+continuous,RCSR-RHCR,0,6,2,moderate,safety_interventions_per_uav_step,interventions/1000 UAV-steps,36.84166666666667,111.6969515753589,4.375,93.15020833333332,20,20,20,20,complete,new_continuous
+continuous,RHCR-adapted,0,6,2,moderate,p90_response_time,steps,208.475,155.1256802295051,134.6471875,283.32515624999996,16,20,20,20,complete,new_continuous
+continuous,RHCR-adapted,0,6,2,moderate,mean_planning_start_error,grid units (post-repair),1.129039988765466,0.4270657932996636,0.948522654579066,1.3089607395366918,20,20,20,20,complete,new_continuous
+continuous,RHCR-adapted,0,6,2,moderate,steady_state_throughput,tasks/step,0.026722222222222224,0.034024940208695856,0.012777777777777779,0.04161111111111111,20,20,20,20,complete,new_continuous
+continuous,RHCR-adapted,0,6,2,moderate,safety_interventions_per_uav_step,interventions/1000 UAV-steps,317.66666666666663,262.7483286541064,203.52416666666667,428.15833333333336,20,20,20,20,complete,new_continuous
+continuous,CC-RHCR,0,6,2,moderate,p90_response_time,steps,180.905,88.79866923493131,141.28987500000002,216.920125,20,20,20,20,complete,new_continuous
+continuous,CC-RHCR,0,6,2,moderate,mean_planning_start_error,grid units (post-repair),5.513974328732635,6.984674949677978,2.9890724387730425,8.682142512528666,20,20,20,20,complete,new_continuous
+continuous,CC-RHCR,0,6,2,moderate,steady_state_throughput,tasks/step,0.07594444444444444,0.04579848932477412,0.05533333333333333,0.09427777777777778,20,20,20,20,complete,new_continuous
+continuous,CC-RHCR,0,6,2,moderate,safety_interventions_per_uav_step,interventions/1000 UAV-steps,7.633333333333333,6.446269150827654,4.983125,10.525,20,20,20,20,complete,new_continuous

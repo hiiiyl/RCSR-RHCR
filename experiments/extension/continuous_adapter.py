@@ -99,6 +99,10 @@ class ContinuousSurrogateTapeEnv(TapeContinuousEnv):
             "true_support_coverage_semantics": "confirmed_graph_node_membership",
             "mean_planning_start_error_semantics": "confirmed_graph_node_error_in_cells",
             "continuous_service_semantics": "physical_centre_distance_at_graph_step_end",
+            "continuous_interface_version": "service_margin_v2",
+            "planning_goal_radius_cells": self.planning_goal_radius,
+            "physical_service_radius_m": self.config.goal_radius * self.dyn_config.cell_size,
+            "terminal_tracking_margin_m": self.dyn_config.waypoint_tolerance,
             "continuous_contact_semantics": "sampled_control_endpoint_onsets_and_exposure",
             "duplicate_confirmed_node_steps": sum(
                 record.get("duplicate_reached_node_hold", 0) for record in self.step_records),

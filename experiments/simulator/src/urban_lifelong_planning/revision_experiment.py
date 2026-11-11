@@ -126,7 +126,9 @@ def run_episode(spec: EpisodeSpec, tape_path: Path):
         channel = DelayedStateChannel(spec.fleet, spec.delay)
     channel.bootstrap(env._state_messages(0, 0))
     horizon = spec.commit_window if method == "CC-RHCR" else 2
-    planner = RHCRAdapted(RHCRConfig(planning_window=max(8, horizon), execution_horizon=horizon), forbid_following=spec.forbid_following)
+    planner = RHCRAdapted(RHCRConfig(planning_window=max(8, horizon), execution_horizon=horizon),
+        forbid_following=spec.forbid_following,
+        goal_radius=getattr(env, "planning_goal_radius", cfg.goal_radius))
     estimator = None
     joint_estimator = None
     if method in ("RCSR-Joint-Bayes", "RCSR-Component-Bayes-V2", "RCSR-Component-Joint-Task-Endpoint"):

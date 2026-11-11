@@ -685,8 +685,12 @@ class SpaceTimePrioritizedPlanner(ReferenceSpaceTimePrioritizedPlanner):
 class RHCRAdapted:
     """Global replanning reference adapted to the public-target city map."""
 
-    def __init__(self, config: RHCRConfig = RHCRConfig(), forbid_following: bool = False):
+    def __init__(self, config: RHCRConfig = RHCRConfig(), forbid_following: bool = False,
+                 goal_radius: float = 1.0):
         self.config = config
+        self.goal_radius = float(goal_radius)
+        if self.goal_radius < 0:
+            raise ValueError("planning goal radius must be nonnegative")
         self.forbid_following = bool(forbid_following)
         self.last_plan_fallback = False
         self.last_failure_reason = ""
@@ -713,7 +717,7 @@ class RHCRAdapted:
         self.last_plan_fallback = False
         self.last_failure_reason = ""
         reservations = ReservationTable(forbid_following=self.forbid_following)
-        planner = SpaceTimePrioritizedPlanner(buildings, goal_radius=1.0)
+        planner = SpaceTimePrioritizedPlanner(buildings, goal_radius=self.goal_radius)
         paths: list[list[Point]] = []
         for owner, (position, goal) in enumerate(zip(positions, goals)):
             # Starts of agents not yet planned occupy time zero. They are not
@@ -746,7 +750,7 @@ class RHCRAdapted:
                 if other == index:
                     continue
                 reservations.reserve_tube(occupancy_tube(buildings, paths[other], buffers[other]), other)
-            planner = SpaceTimePrioritizedPlanner(buildings, goal_radius=1.0)
+            planner = SpaceTimePrioritizedPlanner(buildings, goal_radius=self.goal_radius)
             path = planner.path(position, goal, self.config.planning_window, reservations, tube_buffer=buffers[index])
             if path is None:
                 path = paths[index]

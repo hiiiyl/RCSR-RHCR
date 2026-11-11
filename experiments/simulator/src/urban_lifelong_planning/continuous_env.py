@@ -29,6 +29,14 @@ class ContinuousLifelongCityEnv(LifelongCityEnv):
         self.dyn_config = dyn_config or ContinuousConfig()
         super().__init__(config)
 
+    @property
+    def planning_goal_radius(self) -> float:
+        """Keep the reached-node tolerance inside the physical service region."""
+        radius = self.config.goal_radius - self.dyn_config.waypoint_tolerance / self.dyn_config.cell_size
+        if radius < 0:
+            raise ValueError("physical service radius must cover the waypoint tolerance")
+        return radius
+
     def reset(self, seed: int | None = None) -> None:
         super().reset(seed)
         # Historical aliases count exposure samples, NOT contact events.

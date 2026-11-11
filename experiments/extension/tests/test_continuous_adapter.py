@@ -18,6 +18,7 @@ from urban_lifelong_planning.continuous_env import ContinuousLifelongCityEnv
 from urban_lifelong_planning.delayed_state_channel import StateMessage
 from urban_lifelong_planning.lifelong_city_env import LifelongConfig
 from urban_lifelong_planning.rhcr_adapted import IssuedPathAction
+from urban_lifelong_planning.rhcr_adapted import RHCRAdapted, RHCRConfig
 from urban_lifelong_planning.task_endpoint_conditioning import PublicTaskNotice
 from urban_lifelong_planning.task_history import TaskHistoryComponentEstimator, history_for_control
 
@@ -97,6 +98,30 @@ def test_physical_service_can_disagree_with_graph_surrogate():
     env.positions[0] = (0, 0)
     env._integrators[0].position = [3.5, 3.5]
     assert env._target_reached(0, target)
+
+
+def test_terminal_margin_rejects_premature_boundary_stop():
+    env = environment()
+    target = SimpleNamespace(position=(3, 3))
+    env.positions[0] = (2, 3)
+    env._integrators[0].position = [2.48, 3.5]
+    assert not env._target_reached(0, target)
+    graph = np.zeros((12, 12), dtype=bool)
+    old = RHCRAdapted(RHCRConfig()).plan(graph, [(2, 3)], [(3, 3)])[0]
+    assert all(p == (2, 3) for p in old)
+    planner = RHCRAdapted(RHCRConfig(), goal_radius=env.planning_goal_radius)
+    corrected = planner.plan(graph, [(2, 3)], [(3, 3)])[0]
+    assert corrected[1] == (3, 3)
+    # The full confirmation neighbourhood of the terminal node is serviceable.
+    for dx, dy in ((.30, 0), (-.30, 0), (0, .30), (0, -.30)):
+        env._integrators[0].position = [3.5 + dx, 3.5 + dy]
+        assert env._target_reached(0, target)
+
+
+def test_terminal_margin_scales_in_metres():
+    env = environment()
+    env.dyn_config = replace(env.dyn_config, cell_size=2.)
+    assert env.planning_goal_radius == pytest.approx(.85)
 
 
 def test_physical_history_mismatch_keeps_same_cycle_prior_fallback():

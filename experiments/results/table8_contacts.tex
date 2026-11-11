@@ -1,14 +1,16 @@
 \begin{table*}[!t]
 \centering\small
-\caption{Mean physical contact onsets per episode / sampled exposure fraction. The zero-delay row applies separately to each method. Pair exposure uses $KN(N-1)/2$ samples; building and boundary exposure use $KN$, with $K=20000$.}
+\caption{Mean physical contact onsets per episode / sampled exposure fraction. Pair exposure uses $KN(N-1)/2$ samples; building and boundary exposure use $KN$, with $K=20000$.}
 \label{tab:contacts}
 \begin{tabular}{lllll}
 \toprule
 Condition & Method & UAV pairs & Buildings & Boundary \\ \midrule
-Zero delay & All three methods & 0.050 / 1e-06 & 0.050 / 1.67e-06 & 0.000 / 0 \\
-Moderate & RCSR-RHCR & 0.250 / 4.17e-06 & 0.250 / 1.67e-05 & 0.100 / 2.92e-06 \\
-Moderate & RHCR-adapted & 1.500 / 0.0278 & 1.150 / 5.87e-05 & 0.200 / 1.75e-05 \\
-Moderate & CC-RHCR & 0.900 / 0.00726 & 1.300 / 7.21e-05 & 0.500 / 3.04e-05 \\
+Zero delay & RCSR-RHCR & 0.300 / 0.00168 & 0.900 / 6.54e-05 & 0.100 / 2.5e-06 \\
+Zero delay & RHCR-adapted & 0.300 / 0.00168 & 0.900 / 6.54e-05 & 0.100 / 2.5e-06 \\
+Zero delay & CC-RHCR & 0.300 / 0.00168 & 0.900 / 6.54e-05 & 0.100 / 2.5e-06 \\
+Moderate & RCSR-RHCR & 0.700 / 0.000879 & 1.050 / 6.62e-05 & 0.200 / 1.87e-05 \\
+Moderate & RHCR-adapted & 1.500 / 0.031 & 1.500 / 7.92e-05 & 0.450 / 4.58e-05 \\
+Moderate & CC-RHCR & 0.750 / 0.0061 & 3.150 / 0.000201 & 1.500 / 9.42e-05 \\
 \bottomrule
 \end{tabular}
 \end{table*}

@@ -51,9 +51,9 @@ Numerical-library thread counts are set to one. Timing results depend on hardwar
 
 Window comparisons reuse main-panel results for commitment length two and the fixed RCSR reference, yielding 240 displayed method–seed–setting combinations. Fleet comparisons reuse the six-UAV main-panel results, yielding 180 displayed combinations. These reused records do not add independent episodes. The mechanism study similarly reuses the main RCSR results.
 
-All episode groups have the same twenty seeds. The continuous RHCR-adapted runs for seeds 9405, 9417 and 9419 complete no tasks under moderate asynchronous feedback. Their P90 is undefined and stored as an empty field; throughput and other defined measurements still use all twenty runs. Missing values must not be replaced by zero.
+All episode groups have the same twenty seeds. The continuous RHCR-adapted runs for seeds 9405, 9407, 9417 and 9419 complete no tasks under moderate asynchronous feedback. Their P90 is undefined and stored as an empty field; throughput and other defined measurements still use all twenty runs. Missing values must not be replaced by zero.
 
-The sixteen original seeds informed development; four additional seeds were run with unchanged methods and parameters. The pooled twenty-seed results are paired development results. Original valid records were retained and 398 supplementary runs added, including 162 serial timing runs. No claim of an independent held-out evaluation is made.
+The sixteen original seeds informed development; four additional seeds were run with unchanged methods and parameters. The pooled twenty-seed results are paired development results. The twenty-seed expansion retained valid records and added 398 supplementary runs, including 162 serial timing runs. All 120 continuous episodes were subsequently rerun after the shared terminal-interface correction described below. No claim of an independent held-out evaluation is made.
 
 ## Files and units
 
@@ -72,3 +72,11 @@ Core metrics retain their source units: P90 in graph steps, planning-start error
 ## Random inputs
 
 The twenty nominal random tapes are included under `simulator/tapes/`. They fix maps, deployment, tasks, deviations and energy inputs across methods. The recorded larger-fleet tapes are included under `tapes/n12_t1000/` and `tapes/n18_t1000/`. Missing or short-run tapes are generated deterministically with the original `formal_random_tape.py` implementation. Configurations use a 60 × 60 grid, 1,000 steps, 100-step warm-up, two active targets per UAV, planning horizon eight, and a two-step executed prefix unless the CC window is varied.
+
+## Continuous terminal-interface correction
+
+The continuous planner uses a terminal radius of 0.70 m, reserving the 0.30 m reached-node tolerance inside the unchanged 1 m physical service radius. The former 1 m planner radius could stop a UAV at a confirmed boundary node while its physical position remained outside service range. This caused persistent holds and understated zero-delay throughput. The correction applies equally to all three methods; discrete experiments retain their 1-cell planner radius. The PD gains, dynamics, communication protocol, reconstruction, and reference policies are unchanged.
+
+All 120 continuous episodes were rerun with seeds 9400–9419, the same saved random tapes, and 1,000 steps per episode. RCSR throughput is 0.2676 tasks/step at zero delay and 0.2548 under moderate asynchronous feedback; the latter condition gives 0.0267 for RHCR-adapted and 0.0759 for CC-RHCR. Contacts and snapshot rejections remain measured outcomes. Version `service_margin_v2` is recorded in each new episode summary. Earlier continuous outputs are retained in Git history and must not be pooled with the corrected panel.
+
+After running `python experiments/run.py --suite continuous --workers 4` from the repository root, regenerate the published continuous CSVs and Tables 7–8 with `python experiments/summarize_continuous.py`. This command requires all 120 corrected episodes and refreshes their rows in the combined per-seed index. Archive older files in `experiments/reruns/continuous/` before rerunning; the runner rejects cached records from the earlier interface.
